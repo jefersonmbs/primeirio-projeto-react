@@ -40,3 +40,49 @@ export const Form = styled.form`
     }
   }
 `;
+
+export const Repositories = styled.div`
+  margin-top: 5rem;
+  max-width: 700px;
+
+  a {
+    background: #fff;
+    border-radius: 0.313rem;
+    padding: 1.5rem;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+
+    & + a {
+      margin-top: 1rem;
+    }
+
+    &:hover {
+      transform: translateX(0.8rem);
+    }
+
+    img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+    div {
+      margin-left: 1rem;
+      strong {
+        font-size: 1.25rem;
+        color: #3d3d4d;
+      }
+      p {
+        font-size: 1.125rem;
+        color: #a8a8b3;
+        margin-top: 0.25rem;
+      }
+    }
+    svg {
+      margin-left: auto;
+      color: #c9c9d4;
+    }
+  }
+`;
