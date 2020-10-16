@@ -45,8 +45,12 @@ const Dashboard: React.FC = () => {
         <button type="submit">Pesquisar</button>
       </Form>
       <Repositories>
-        {repositories.map((repository) => (
-          <a key={repository.full_name} href="teste">
+        {repositories.map(repository => (
+          <a
+            key={repository.full_name}
+            href={`https://github.com/${repository.full_name}`}
+            target="_blank"
+          >
             <img src={repository.owner.avatar_url} alt={repository.login} />
             <div>
               <strong>{repository.full_name}</strong>
